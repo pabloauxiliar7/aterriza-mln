@@ -1,0 +1,121 @@
+# 20 METAR reales de Melilla (GEML), del archivo del Iowa Environmental
+# Mesonet, con el veredicto calculado A MANO con estos mínimos:
+#   techo mínimo 1000 ft · visibilidad mínima 1600 m · margen 20 %
+#   → ámbar si techo 1000–1199 ft o visibilidad 1600–1919 m
+#   Viento: informativo (sus límites están en RELLENAR).
+# Techo = capa BKN, OVC o VV más baja (FEW y SCT no cuentan).
+#
+# Se comprueban con tests/config_pruebas.yaml (copia fija de los mínimos),
+# así que cambiar tu config.yaml no rompe esta prueba.
+
+- metar: GEML 300530Z 00000KT CAVOK 17/17 Q1018
+  estado: verde
+  razon: CAVOK, sin techo y visibilidad de 10 km o más.
+
+- metar: METAR GEML 311100Z 08005KT 350V150 9999 FEW006 SCT014 24/17 Q1019
+  estado: verde
+  razon: FEW y SCT no forman techo; visibilidad 10 km.
+
+- metar: GEML 010600Z 21003KT 160V280 6000 SCT008 OVC010 12/10 Q1027
+  estado: ambar
+  razon: Techo 1000 ft, justo en el mínimo (cumple, pero dentro del margen).
+  motivo_contiene: techo 1.000 ft, cerca del mínimo de 1.000 ft
+
+- metar: GEML 010700Z VRB02KT 7000 FEW008 OVC010 12/10 Q1028
+  estado: ambar
+  razon: Techo 1000 ft (OVC010); FEW008 no cuenta.
+
+- metar: GEML 040800Z 08019G31KT 050V120 9999 BKN011 OVC017 13/10 Q1005
+  estado: ambar
+  razon: Techo 1100 ft, entre 1000 y 1199.
+  motivo_contiene: techo 1.100 ft
+
+- metar: GEML 030500Z 17003KT 140V230 2500 BR OVC003 11/11 Q1027
+  estado: rojo
+  razon: Techo 300 ft < 1000 ft. Visibilidad 2500 m sí cumple.
+  motivo_contiene: techo 300 ft, por debajo de 1.000 ft
+  causas: [techo]
+
+- metar: GEML 030900Z 25003KT 190V320 1500 BR SCT002 OVC003 10/10 Q1028
+  estado: rojo
+  razon: Techo 300 ft < 1000 ft y visibilidad 1500 m < 1600 m.
+  causas: [techo, visibilidad]
+
+- metar: GEML 180500Z 25003KT 0800 R33/P2000 FG SCT001 10/09 Q1020
+  estado: rojo
+  razon: Niebla sin techo (SCT001 no cuenta); visibilidad 800 m < 1600 m.
+  motivo_contiene: visibilidad 800 m, por debajo de 1.600 m
+  causas: [visibilidad]
+
+- metar: GEML 180700Z VRB02KT 0300 R33/P2000 FG FEW001 09/08 Q1020
+  estado: rojo
+  razon: Visibilidad 300 m < 1600 m.
+  causas: [visibilidad]
+
+- metar: GEML 032330Z AUTO 30004KT 270V340 0450 FG VV001 10/10 Q1023
+  estado: rojo
+  razon: Cielo oculto VV 100 ft < 1000 ft y visibilidad 450 m < 1600 m.
+  causas: [techo, visibilidad]
+
+- metar: GEML 140830Z 17003KT 130V210 0900 R33/1300U FG VV003 16/16 Q1022
+  estado: rojo
+  razon: VV 300 ft < 1000 ft y visibilidad 900 m < 1600 m.
+  causas: [techo, visibilidad]
+
+- metar: GEML 180430Z AUTO VRB01KT 0150 R33/0125N FG VV003 15/15 Q1024
+  estado: rojo
+  razon: VV 300 ft y visibilidad 150 m.
+  causas: [techo, visibilidad]
+
+- metar: GEML 042200Z AUTO 29014G31KT 240V340 9999 FEW026 SCT033 BKN046 16/10 Q1020
+  estado: verde
+  razon: Techo 4600 ft; visibilidad 10 km. Viento fuerte, pero informativo.
+
+- metar: GEML 050530Z 31022G37KT 280V350 CAVOK 14/07 Q1020
+  estado: verde
+  razon: CAVOK. Viento del noroeste casi de cara a la pista 33.
+  # Cálculo a mano: 310° geográfico − 1° = 309° magnético.
+  # Pista 33 (326°): diferencia 17° → cruzado 22·sen17 = 6 kt,
+  #   cara 22·cos17 = 21 kt; con ráfaga 37 → cruzado 11, cara 35.
+  # Pista 15 (146°): mismo cruzado; 21 kt de cola (35 con ráfaga).
+  viento:
+    "33": {cruzado: 6, cara: 21, cola: 0, cruzado_racha: 11, cara_racha: 35}
+    "15": {cruzado: 6, cara: 0, cola: 21, cruzado_racha: 11, cola_racha: 35}
+
+- metar: GEML 191330Z 24020G40KT 140V280 9999 FEW050 20/05 Q1009
+  estado: verde
+  razon: Sin techo; visibilidad 10 km. Poniente casi perpendicular a la pista.
+  # 240° − 1° = 239° magnético. Pista 15: diferencia 93° →
+  # cruzado 20·sen93 = 20 kt (40 con ráfaga); cola 20·cos93 ≈ 1 kt.
+  viento:
+    "15": {cruzado: 20, cara: 0, cola: 1, cruzado_racha: 40, cola_racha: 2}
+    "33": {cruzado: 20, cara: 1, cola: 0, cruzado_racha: 40, cara_racha: 2}
+
+- metar: GEML 122300Z AUTO 12013G23KT 080V160 CAVOK 13/05 Q1028
+  estado: verde
+  razon: CAVOK. De cara en la 15 y de cola en la 33.
+  # 120° − 1° = 119°. Pista 15: diferencia 27° → cruzado 13·sen27 = 6
+  # (10 con ráfaga), cara 13·cos27 = 12 (20 con ráfaga).
+  viento:
+    "15": {cruzado: 6, cara: 12, cola: 0, cruzado_racha: 10, cara_racha: 20}
+    "33": {cruzado: 6, cara: 0, cola: 12, cruzado_racha: 10, cola_racha: 20}
+
+- metar: GEML 041030Z VRB04KT CAVOK 20/03 Q1023
+  estado: verde
+  razon: CAVOK. Viento variable de 4 kt (se cuenta entero como cruzado y cola).
+  viento:
+    "15": {cruzado: 4, cara: 0, cola: 4}
+    "33": {cruzado: 4, cara: 0, cola: 4}
+
+- metar: GEML 040600Z 32024G46KT 260V350 3000 TSRA SCT030CB BKN050 10/07 Q1013
+  estado: verde
+  razon: Techo 5000 ft; visibilidad 3000 m (≥ 1920). La tormenta no es un
+    criterio del semáforo; el METAR descifrado la muestra.
+
+- metar: GEML 282230Z AUTO 10007KT 060V150 6000 TSRA SCT013/// BKN022/// BKN045/// ///CB 16/14 Q1021
+  estado: verde
+  razon: Techo 2200 ft (BKN022); hay techo conocido más bajo que la capa ///CB.
+
+- metar: GEML 022000Z AUTO 34003KT 7000 NCD 11/09 Q1029
+  estado: verde
+  razon: NCD = la estación automática no detecta nubes; visibilidad 7 km.

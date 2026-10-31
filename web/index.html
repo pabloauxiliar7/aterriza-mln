@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aterriza MLN</title>
+  <meta name="description" content="Estimación orientativa de si la meteorología del aeropuerto de Melilla permite aterrizar.">
+  <!-- Instalación como aplicación (PWA) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <!-- iPhone: icono y modo pantalla completa al añadir a la pantalla de inicio -->
+  <link rel="apple-touch-icon" href="iconos/icono-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Aterriza MLN">
+  <link rel="icon" href="iconos/icono-192.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Aterriza MLN</h1>
+    <p class="subtitulo">Aeropuerto de Melilla · estimación orientativa</p>
+  </header>
+
+  <!-- Aviso que aparece cuando no hay conexión -->
+  <div id="aviso-conexion" class="aviso aviso-info" hidden role="status">
+    Sin conexión: se muestra el último dato guardado.
+  </div>
+
+  <main>
+    <!-- ============ 1. AHORA ============ -->
+    <section id="ahora" class="pantalla" aria-labelledby="titulo-ahora">
+      <h2 id="titulo-ahora" class="solo-lectores">Ahora</h2>
+      <div id="ahora-contenido"><p class="cargando">Cargando…</p></div>
+    </section>
+
+    <!-- ============ 2. PRÓXIMAS 24 H ============ -->
+    <section id="prevision" class="pantalla" aria-labelledby="titulo-prevision" hidden>
+      <h2 id="titulo-prevision">Próximas 24 horas</h2>
+      <div id="prevision-contenido"><p class="cargando">Cargando…</p></div>
+    </section>
+
+    <!-- ============ 3. HISTÓRICO ============ -->
+    <section id="historico" class="pantalla" aria-labelledby="titulo-historico" hidden>
+      <h2 id="titulo-historico">Histórico</h2>
+      <div id="historico-contenido"><p class="cargando">Cargando…</p></div>
+    </section>
+
+    <!-- ============ 4. AJUSTES ============ -->
+    <section id="ajustes" class="pantalla" aria-labelledby="titulo-ajustes" hidden>
+      <h2 id="titulo-ajustes">Ajustes e información</h2>
+      <div id="ajustes-contenido"><p class="cargando">Cargando…</p></div>
+    </section>
+  </main>
+
+  <!-- Barra de navegación inferior (manejable con el pulgar) -->
+  <nav class="navegacion" aria-label="Pantallas">
+    <button type="button" data-pantalla="ahora" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+      <span>Ahora</span>
+    </button>
+    <button type="button" data-pantalla="prevision">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+      <span>Próximas 24 h</span>
+    </button>
+    <button type="button" data-pantalla="historico">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      <span>Histórico</span>
+    </button>
+    <button type="button" data-pantalla="ajustes">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+      <span>Ajustes</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

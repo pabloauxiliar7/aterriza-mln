@@ -1,0 +1,93 @@
+{
+ "generado_utc": "2026-10-31T11:38Z",
+ "oaci": "GEML",
+ "metar": {
+  "texto": "METAR GEML 311130Z 09005KT 060V140 9999 FEW006 SCT013 23/18 Q1018",
+  "hora_utc": "2026-10-31T11:30Z",
+  "descifrado": [
+   "Viento: del 090° a 5 kt (cambiando entre 060° y 140°).",
+   "Visibilidad: 10 km o más.",
+   "Nubes: pocas nubes a 600 ft; nubes dispersas a 1.300 ft.",
+   "Temperatura 23 °C, punto de rocío 18 °C.",
+   "Presión (QNH): 1018 hPa."
+  ]
+ },
+ "semaforo": {
+  "estado": "verde",
+  "texto": "Por encima de los mínimos",
+  "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+  "procedimiento": "VOR A (en circuito)",
+  "causas": []
+ },
+ "techo_ft": null,
+ "techo_conocido": true,
+ "visibilidad_m": 10000,
+ "viento_por_pista": [
+  {
+   "pista": "15",
+   "cruzado": 4,
+   "cara": 3,
+   "cola": 0,
+   "cruzado_racha": null,
+   "cara_racha": null,
+   "cola_racha": null,
+   "cruzado_max": 4,
+   "cola_max": 0
+  },
+  {
+   "pista": "33",
+   "cruzado": 4,
+   "cara": 0,
+   "cola": 3,
+   "cruzado_racha": null,
+   "cara_racha": null,
+   "cola_racha": null,
+   "cruzado_max": 4,
+   "cola_max": 3
+  }
+ ],
+ "viento_evaluado": false,
+ "aviso_viento": "El viento no se tiene en cuenta en este resultado: faltan sus límites en config.yaml.",
+ "procedimientos": [
+  {
+   "nombre": "VOR A (en circuito)",
+   "ok": true,
+   "marginal": false
+  },
+  {
+   "nombre": "NDB B (en circuito)",
+   "ok": true,
+   "marginal": false
+  }
+ ],
+ "reglas": {
+  "procedimientos": [
+   {
+    "nombre": "VOR A (en circuito)",
+    "pista": "cualquiera",
+    "techo_minimo_ft": 1000.0,
+    "visibilidad_minima_m": 1600.0
+   },
+   {
+    "nombre": "NDB B (en circuito)",
+    "pista": "cualquiera",
+    "techo_minimo_ft": 1000.0,
+    "visibilidad_minima_m": 1600.0
+   }
+  ],
+  "pistas": {
+   "15": 146.0,
+   "33": 326.0
+  },
+  "declinacion_magnetica_este": 1.0,
+  "cruzado_maximo_kt": null,
+  "cola_maximo_kt": null,
+  "margen_marginal_pct": 20,
+  "viento_evaluado": false,
+  "pendientes": [
+   "viento cruzado máximo",
+   "viento de cola máximo"
+  ],
+  "zona_horaria": "Europe/Madrid"
+ }
+}

@@ -1,0 +1,57 @@
+# =====================================================================
+#  Aterriza MLN · Reglas de cálculo
+#  Puedes editar este archivo sin tocar el código.
+#  - Las líneas que empiezan por «#» son comentarios: no cuentan.
+#  - Si no conoces un valor, escribe RELLENAR y la web lo indicará.
+#  - Revisa los valores en cada ciclo AIRAC (cada 28 días):
+#    https://aip.enaire.es/AIP/#GEML
+# =====================================================================
+
+aeropuerto:
+  oaci: GEML
+  nombre: Melilla
+  zona_horaria: Europe/Madrid      # Melilla usa la hora peninsular
+  # El METAR da el viento respecto al norte geográfico y las pistas
+  # usan el norte magnético. Fuente: cartas IAC, «VAR 1ºE (2025)».
+  declinacion_magnetica_este: 1
+
+# Rumbo magnético de cada pista.
+# Fuente: AIP España, AD 2-GEML, casilla 12 (AIRAC AMDT 09/26).
+pistas:
+  "15":
+    rumbo_magnetico: 146
+  "33":
+    rumbo_magnetico: 326
+
+# Procedimientos de aproximación.
+# - techo_minimo_ft: altura sobre el aeropuerto (OCH). Los METAR miden
+#   las nubes desde el aeropuerto, por eso se usa OCH (1000) y no
+#   OCA (1150, que es sobre el nivel del mar).
+#   Fuente: AD 2-GEML IAC 1.1 y IAC 2.1, «En circuito: 1150 (1000)».
+# - visibilidad_minima_m: el AIP no la publica. 1600 m es el valor de
+#   la normativa europea de operaciones (Reglamento UE 965/2012,
+#   AMC CAT.OP.MPA.110) para aproximaciones en circuito, categoría B.
+# - pista: «cualquiera» en aproximaciones en circuito (se aterriza
+#   por la pista más favorable); si no, escribe "15" o "33".
+procedimientos:
+  - nombre: VOR A (en circuito)
+    pista: cualquiera
+    techo_minimo_ft: 1000
+    visibilidad_minima_m: 1600
+  - nombre: NDB B (en circuito)
+    pista: cualquiera
+    techo_minimo_ft: 1000
+    visibilidad_minima_m: 1600
+
+# Límites de viento (en nudos). Se aplican también a las ráfagas.
+# No son públicos: dependen del avión y de la aerolínea.
+# Mientras ponga RELLENAR, el viento se muestra solo como información
+# y NO cuenta para el semáforo.
+viento:
+  cruzado_maximo_kt: RELLENAR
+  cola_maximo_kt: RELLENAR
+
+# Margen de «marginal» (ámbar), en porcentaje.
+# Ejemplo con 20: techo mínimo 1000 ft → ámbar entre 1000 y 1199 ft.
+# Elección propia, no es un valor oficial.
+margen_marginal_pct: 20

@@ -1,0 +1,100 @@
+# =====================================================================
+#  Aterriza MLN · tarea automática
+#  Cada 30 minutos: descarga METAR y TAF, guarda los datos nuevos en el
+#  repositorio (solo si los hay) y publica la web en GitHub Pages.
+#  También se ejecuta al cambiar config.yaml, la web o los scripts, y a
+#  mano desde la pestaña «Actions» → «Actualizar y publicar» → «Run workflow».
+# =====================================================================
+
+name: Actualizar y publicar
+
+on:
+  schedule:
+    # Minutos 7 y 37 de cada hora (UTC). GitHub puede retrasarlo unos minutos.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - config.yaml
+      - web/**
+      - scripts/**
+      - tests/**
+      - .github/workflows/actualizar.yml
+
+permissions:
+  contents: write   # para guardar los datos nuevos
+  pages: write      # para publicar en GitHub Pages
+  id-token: write
+
+# Nunca dos ejecuciones a la vez (evita choques al guardar).
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar librerías
+        run: pip install -r requirements.txt
+
+      - name: Comprobar config.yaml y ejecutar las pruebas
+        run: |
+          python -c "import sys; sys.path.insert(0, 'scripts'); from reglas import cargar_config; c = cargar_config(); print('config.yaml correcto. Pendientes:', c['pendientes'] or 'ninguno')"
+          python -m pytest -q tests/
+
+      - name: Descargar METAR y TAF
+        run: python scripts/actualizar.py
+
+      - name: Guardar los datos nuevos (solo si los hay)
+        id: guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ahora.json data/24h.json data/historico
+          if git diff --cached --quiet; then
+            echo "Sin datos nuevos: no se guarda nada."
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Datos $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+            echo "cambios=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      # La web solo se vuelve a publicar si hay datos nuevos o si el cambio
+      # viene de ti (config.yaml, web, scripts o ejecución manual).
+      - name: Calcular estadísticas y preparar la web
+        if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule'
+        run: |
+          python scripts/historico.py
+          python scripts/servir_local.py --solo-preparar
+
+      - name: Configurar GitHub Pages
+        if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule'
+        uses: actions/configure-pages@v5
+
+      - name: Subir la web
+        if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar en GitHub Pages
+        if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule'
+        id: despliegue
+        uses: actions/deploy-pages@v4

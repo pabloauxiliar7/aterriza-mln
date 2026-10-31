@@ -1,0 +1,19 @@
+# Configuración FIJA para las pruebas automáticas.
+# Es una copia de los valores de config.yaml del 31/10/2026. Así, si
+# cambias tus mínimos en config.yaml, las pruebas no fallan y la tarea
+# automática sigue publicando. No hace falta tocar este archivo.
+aeropuerto:
+  oaci: GEML
+  nombre: Melilla
+  zona_horaria: Europe/Madrid
+  declinacion_magnetica_este: 1
+pistas:
+  "15": {rumbo_magnetico: 146}
+  "33": {rumbo_magnetico: 326}
+procedimientos:
+  - {nombre: VOR A (en circuito), pista: cualquiera, techo_minimo_ft: 1000, visibilidad_minima_m: 1600}
+  - {nombre: NDB B (en circuito), pista: cualquiera, techo_minimo_ft: 1000, visibilidad_minima_m: 1600}
+viento:
+  cruzado_maximo_kt: RELLENAR
+  cola_maximo_kt: RELLENAR
+margen_marginal_pct: 20

@@ -1,0 +1,223 @@
+/* =====================================================================
+   Aterriza MLN · estilos
+   - Fondo claro y mucho contraste para leer al sol.
+   - Modo oscuro automático (según el teléfono) o elegido en Ajustes.
+   - Tipografía del sistema; barra de navegación abajo, para el pulgar.
+   ===================================================================== */
+
+/* ---- Colores (modo claro) ---- */
+:root {
+  --fondo: #ffffff;
+  --superficie: #f4f4f2;
+  --borde: #d9d8d2;
+  --texto: #0b0b0b;
+  --texto-2: #46453f;
+  --texto-3: #6e6d67;
+  --enlace: #1c5cab;
+  --foco: #2a78d6;
+
+  /* Semáforo (siempre acompañado de icono y texto) */
+  --verde: #0a8a0a;
+  --ambar: #fab219;
+  --rojo: #d03b3b;
+  --gris: #8a8983;
+  --verde-suave: #e6f4e6;
+  --ambar-suave: #fff4d9;
+  --rojo-suave: #fbe7e7;
+  --gris-suave: #efefec;
+
+  /* Escala del mapa de calor: un solo color (azul), de claro a oscuro */
+  --c0: #f4f4f2; --c1: #cde2fb; --c2: #9ec5f4; --c3: #6da7ec;
+  --c4: #3987e5; --c5: #256abf; --c6: #184f95; --c7: #0d366b;
+  --c-texto-claro: #0b0b0b; --c-texto-oscuro: #ffffff;
+
+  --radio: 14px;
+  --barra: 64px;
+  color-scheme: light;
+}
+
+/* ---- Colores (modo oscuro) ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fondo: #121212; --superficie: #1e1e1d; --borde: #383835;
+    --texto: #f0efec; --texto-2: #c3c2b7; --texto-3: #9a998f;
+    --enlace: #86b6ef; --foco: #6da7ec;
+    --verde: #2fbf2f; --gris: #9a998f;
+    --verde-suave: #16301a; --ambar-suave: #3a2e0f; --rojo-suave: #3d1c1c; --gris-suave: #262624;
+    /* En oscuro, más horas = más claro */
+    --c0: #1e1e1d; --c1: #0d366b; --c2: #184f95; --c3: #256abf;
+    --c4: #3987e5; --c5: #6da7ec; --c6: #9ec5f4; --c7: #cde2fb;
+    --c-texto-claro: #ffffff; --c-texto-oscuro: #0b0b0b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --fondo: #121212; --superficie: #1e1e1d; --borde: #383835;
+  --texto: #f0efec; --texto-2: #c3c2b7; --texto-3: #9a998f;
+  --enlace: #86b6ef; --foco: #6da7ec;
+  --verde: #2fbf2f; --gris: #9a998f;
+  --verde-suave: #16301a; --ambar-suave: #3a2e0f; --rojo-suave: #3d1c1c; --gris-suave: #262624;
+  --c0: #1e1e1d; --c1: #0d366b; --c2: #184f95; --c3: #256abf;
+  --c4: #3987e5; --c5: #6da7ec; --c6: #9ec5f4; --c7: #cde2fb;
+  --c-texto-claro: #ffffff; --c-texto-oscuro: #0b0b0b;
+  color-scheme: dark;
+}
+
+/* ---- Base ---- */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, sans-serif;
+  /* Hueco para la barra inferior y la zona segura del iPhone */
+  padding-bottom: calc(var(--barra) + env(safe-area-inset-bottom) + 16px);
+}
+main, .cabecera, #aviso-conexion { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+h2 { font-size: 1.3rem; margin: 1.2rem 0 .6rem; }
+h3 { font-size: 1.05rem; margin: 1.4rem 0 .5rem; }
+p { margin: .4rem 0; }
+a { color: var(--enlace); }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.cargando, .nota { color: var(--texto-3); font-size: .9rem; }
+code, .codigo { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .85rem; }
+.codigo {
+  display: block; padding: 12px; background: var(--superficie); border-radius: 10px;
+  overflow-wrap: anywhere; line-height: 1.5;
+}
+
+.cabecera { padding-top: calc(env(safe-area-inset-top) + 12px); }
+.cabecera h1 { font-size: 1.15rem; margin: 0; }
+.subtitulo { margin: 0; color: var(--texto-3); font-size: .85rem; }
+
+/* ---- Avisos ---- */
+.aviso {
+  border-radius: 10px; padding: 10px 12px; margin: 12px 0; font-size: .95rem;
+  border-left: 5px solid var(--gris); background: var(--gris-suave);
+}
+.aviso-alerta { border-left-color: var(--ambar); background: var(--ambar-suave); }
+.aviso-info { border-left-color: var(--foco); }
+
+/* ---- Semáforo grande ---- */
+.semaforo {
+  display: flex; gap: 16px; align-items: center;
+  padding: 18px; margin-top: 12px; border-radius: var(--radio);
+  border: 2px solid var(--borde);
+}
+.luz {
+  flex: none; width: 76px; height: 76px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 2.2rem; font-weight: 800; color: #fff;
+}
+.estado-texto { font-size: 1.45rem; font-weight: 750; line-height: 1.2; margin: 0 0 4px; }
+.motivo { margin: 0; font-size: 1.05rem; color: var(--texto-2); }
+.verde .luz { background: var(--verde); }   .semaforo.verde { background: var(--verde-suave); border-color: var(--verde); }
+.ambar .luz { background: var(--ambar); color: #0b0b0b; } .semaforo.ambar { background: var(--ambar-suave); border-color: var(--ambar); }
+.rojo .luz  { background: var(--rojo); }    .semaforo.rojo  { background: var(--rojo-suave);  border-color: var(--rojo); }
+.gris .luz  { background: var(--gris); }    .semaforo.gris  { background: var(--gris-suave);  border-color: var(--gris); }
+
+.hora-dato { color: var(--texto-2); font-size: .95rem; margin-top: 10px; }
+
+/* ---- Etiqueta pequeña de estado (24 h) ---- */
+.etiqueta {
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  font-weight: 650; font-size: .9rem;
+}
+.etiqueta .punto {
+  width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
+  color: #fff; font-size: .8rem; font-weight: 800;
+}
+.etiqueta.verde .punto { background: var(--verde); }
+.etiqueta.ambar .punto { background: var(--ambar); color: #0b0b0b; }
+.etiqueta.rojo  .punto { background: var(--rojo); }
+.etiqueta.gris  .punto { background: var(--gris); }
+
+/* ---- Tablas ---- */
+table { border-collapse: collapse; width: 100%; }
+.tabla th, .tabla td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--borde); }
+.tabla th { font-size: .85rem; color: var(--texto-3); font-weight: 600; }
+.tabla td.num { font-variant-numeric: tabular-nums; }
+
+/* ---- Lista del METAR descifrado ---- */
+.lista { padding-left: 1.1rem; margin: .4rem 0; }
+.lista li { margin: .25rem 0; }
+details { margin: .6rem 0; }
+summary { cursor: pointer; color: var(--enlace); padding: 6px 0; }
+
+/* ---- Próximas 24 h ---- */
+.dia { font-size: .95rem; color: var(--texto-3); margin: 1.2rem 0 .2rem; }
+.franja { padding: 8px 0; border-bottom: 1px solid var(--borde); }
+.franja-cabecera { display: flex; gap: 12px; align-items: center; }
+.franja-hora { font-variant-numeric: tabular-nums; font-weight: 650; min-width: 3.2em; }
+.franja .motivo { font-size: .92rem; margin: 4px 0 0 calc(3.2em + 12px); }
+.posible {
+  margin: 6px 0 0 calc(3.2em + 12px); padding: 6px 10px; border-radius: 8px;
+  background: var(--superficie); font-size: .9rem;
+}
+.posible-titulo { color: var(--texto-3); font-size: .8rem; display: block; }
+
+/* ---- Controles ---- */
+.selector { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.selector button {
+  font: inherit; font-size: .95rem; padding: 8px 14px; min-height: 44px;
+  border-radius: 999px; border: 1px solid var(--borde);
+  background: var(--fondo); color: var(--texto); cursor: pointer;
+}
+.selector button[aria-pressed="true"] { background: var(--texto); color: var(--fondo); border-color: var(--texto); }
+label { display: block; font-weight: 600; margin: 10px 0 4px; }
+input[type="number"] {
+  font: inherit; width: 8em; padding: 8px 10px; min-height: 44px;
+  border: 1px solid var(--borde); border-radius: 10px; background: var(--fondo); color: var(--texto);
+}
+input[type="range"] { width: 100%; min-height: 44px; accent-color: var(--foco); }
+.tarjeta { background: var(--superficie); border-radius: var(--radio); padding: 14px 16px; margin: 12px 0; }
+.resultado { font-size: 1.05rem; }
+.resultado strong { font-size: 1.2rem; }
+
+/* ---- Mapa de calor ---- */
+.mapa-contenedor { overflow-x: auto; margin: 8px -4px; }
+.mapa { table-layout: fixed; min-width: 330px; font-variant-numeric: tabular-nums; }
+.mapa th { font-size: .72rem; color: var(--texto-3); font-weight: 600; padding: 2px 0; text-align: center; }
+.mapa th.hora { text-align: right; padding-right: 6px; width: 2.6em; }
+.mapa td {
+  height: 26px; text-align: center; font-size: .72rem; cursor: pointer;
+  border: 2px solid var(--fondo); border-radius: 4px; padding: 0;
+}
+.mapa td.seleccionada { outline: 2px solid var(--texto); outline-offset: -2px; }
+.n0 { background: var(--c0); color: var(--texto-3); }
+.n1 { background: var(--c1); color: var(--c-texto-claro); }
+.n2 { background: var(--c2); color: var(--c-texto-claro); }
+.n3 { background: var(--c3); color: var(--c-texto-claro); }
+.n4 { background: var(--c4); color: var(--c-texto-oscuro); }
+.n5 { background: var(--c5); color: var(--c-texto-oscuro); }
+.n6 { background: var(--c6); color: var(--c-texto-oscuro); }
+.n7 { background: var(--c7); color: var(--c-texto-oscuro); }
+.leyenda { display: flex; align-items: center; gap: 2px; font-size: .75rem; color: var(--texto-3); margin: 6px 0; flex-wrap: wrap; }
+.leyenda span.caja { width: 26px; height: 14px; border-radius: 3px; display: inline-block; }
+.detalle-celda { min-height: 2.8em; font-size: .95rem; color: var(--texto-2); }
+
+/* ---- Pie con aviso legal ---- */
+.pie { margin-top: 28px; padding-top: 12px; border-top: 1px solid var(--borde); font-size: .82rem; color: var(--texto-3); }
+
+/* ---- Barra de navegación inferior ---- */
+.navegacion {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  height: calc(var(--barra) + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--fondo); border-top: 1px solid var(--borde);
+}
+.navegacion button {
+  font: inherit; font-size: .72rem; background: none; border: 0; color: var(--texto-3);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  cursor: pointer; padding: 6px 2px;
+}
+.navegacion svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.navegacion button[aria-current="page"] { color: var(--texto); font-weight: 700; }
+.navegacion button[aria-current="page"] svg { stroke-width: 2.6; }
+
+@media (forced-colors: active) {
+  .luz, .etiqueta .punto { border: 2px solid CanvasText; }
+}

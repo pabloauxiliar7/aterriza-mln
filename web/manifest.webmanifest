@@ -1,0 +1,16 @@
+{
+  "name": "Aterriza MLN",
+  "short_name": "Aterriza MLN",
+  "description": "Estimación orientativa de si la meteorología del aeropuerto de Melilla permite aterrizar.",
+  "lang": "es-ES",
+  "start_url": "./#ahora",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
