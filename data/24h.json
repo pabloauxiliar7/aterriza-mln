@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-01T11:37Z",
+ "generado_utc": "2026-11-01T13:48Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 011100Z 0112/0212 10007KT 9999 FEW020 TX24/0114Z TN15/0206Z",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-02T12:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-01T12:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-01T13:00Z",
    "estado": "verde",
