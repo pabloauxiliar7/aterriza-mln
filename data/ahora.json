@@ -1,9 +1,9 @@
 {
- "generado_utc": "2026-11-02T22:43Z",
+ "generado_utc": "2026-11-02T23:39Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 022230Z AUTO 00000KT CAVOK 18/14 Q1017",
-  "hora_utc": "2026-11-02T22:30Z",
+  "texto": "METAR GEML 022330Z AUTO 00000KT CAVOK 18/14 Q1017",
+  "hora_utc": "2026-11-02T23:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: en calma.",
