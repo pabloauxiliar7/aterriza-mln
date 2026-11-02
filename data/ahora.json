@@ -1,15 +1,15 @@
 {
- "generado_utc": "2026-11-02T21:42Z",
+ "generado_utc": "2026-11-02T22:43Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 022130Z AUTO 00000KT CAVOK 19/15 Q1018",
-  "hora_utc": "2026-11-02T21:30Z",
+  "texto": "METAR GEML 022230Z AUTO 00000KT CAVOK 18/14 Q1017",
+  "hora_utc": "2026-11-02T22:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: en calma.",
    "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
-   "Temperatura 19 °C, punto de rocío 15 °C.",
-   "Presión (QNH): 1018 hPa."
+   "Temperatura 18 °C, punto de rocío 14 °C.",
+   "Presión (QNH): 1017 hPa."
   ]
  },
  "semaforo": {
