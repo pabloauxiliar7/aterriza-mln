@@ -1,15 +1,15 @@
 {
- "generado_utc": "2026-11-03T12:25Z",
+ "generado_utc": "2026-11-03T13:44Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 031200Z 32006KT 300V360 9999 FEW010 21/16 Q1014",
-  "hora_utc": "2026-11-03T12:00Z",
+  "texto": "METAR GEML 031330Z 32006KT 290V350 9999 FEW008 SCT034 21/17 Q1013",
+  "hora_utc": "2026-11-03T13:30Z",
   "descifrado": [
-   "Viento: del 320° a 6 kt (cambiando entre 300° y 360°).",
+   "Viento: del 320° a 6 kt (cambiando entre 290° y 350°).",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.000 ft.",
-   "Temperatura 21 °C, punto de rocío 16 °C.",
-   "Presión (QNH): 1014 hPa."
+   "Nubes: pocas nubes a 800 ft; nubes dispersas a 3.400 ft.",
+   "Temperatura 21 °C, punto de rocío 17 °C.",
+   "Presión (QNH): 1013 hPa."
   ]
  },
  "semaforo": {
