@@ -1,15 +1,14 @@
 {
- "generado_utc": "2026-11-04T01:59Z",
+ "generado_utc": "2026-11-04T02:51Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 040130Z AUTO 00000KT 9999 FEW039 SCT048 19/16 Q1012",
-  "hora_utc": "2026-11-04T01:30Z",
+  "texto": "METAR GEML 040230Z AUTO 00000KT CAVOK 19/15 Q1012",
+  "hora_utc": "2026-11-04T02:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: en calma.",
-   "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 3.900 ft; nubes dispersas a 4.800 ft.",
-   "Temperatura 19 °C, punto de rocío 16 °C.",
+   "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
+   "Temperatura 19 °C, punto de rocío 15 °C.",
    "Presión (QNH): 1012 hPa."
   ]
  },
