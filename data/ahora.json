@@ -1,9 +1,9 @@
 {
- "generado_utc": "2026-11-05T17:56Z",
+ "generado_utc": "2026-11-05T18:55Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 051730Z VRB02KT 9999 FEW020 19/15 Q1020",
-  "hora_utc": "2026-11-05T17:30Z",
+  "texto": "METAR GEML 051830Z VRB02KT 9999 FEW020 19/15 Q1020",
+  "hora_utc": "2026-11-05T18:30Z",
   "descifrado": [
    "Viento: de dirección variable, 2 kt.",
    "Visibilidad: 10 km o más.",
