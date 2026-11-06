@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-05T23:45Z",
+ "generado_utc": "2026-11-06T01:05Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 052300Z 0600/0624 20004KT CAVOK TX23/0614Z TN16/0607Z BECMG 0607/0610 12010KT PROB30 TEMPO 0619/0624 3000 BR BKN010",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-07T00:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-06T00:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-06T01:00Z",
    "estado": "verde",
