@@ -1,25 +1,25 @@
 {
- "generado_utc": "2026-11-06T20:22Z",
+ "generado_utc": "2026-11-06T21:18Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 062000Z 14004KT 9999 BKN019 20/16 Q1021",
-  "hora_utc": "2026-11-06T20:00Z",
+  "texto": "METAR GEML 062100Z 14004KT 9999 BKN020 20/17 Q1021",
+  "hora_utc": "2026-11-06T21:00Z",
   "descifrado": [
    "Viento: del 140° a 4 kt.",
    "Visibilidad: 10 km o más.",
-   "Nubes: nuboso a 1.900 ft.",
-   "Temperatura 20 °C, punto de rocío 16 °C.",
+   "Nubes: nuboso a 2.000 ft.",
+   "Temperatura 20 °C, punto de rocío 17 °C.",
    "Presión (QNH): 1021 hPa."
   ]
  },
  "semaforo": {
   "estado": "verde",
   "texto": "Por encima de los mínimos",
-  "motivo": "Techo 1.900 ft y visibilidad 10 km o más.",
+  "motivo": "Techo 2.000 ft y visibilidad 10 km o más.",
   "procedimiento": "VOR A (en circuito)",
   "causas": []
  },
- "techo_ft": 1900,
+ "techo_ft": 2000,
  "techo_conocido": true,
  "visibilidad_m": 10000,
  "viento_por_pista": [
