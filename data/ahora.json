@@ -1,13 +1,13 @@
 {
- "generado_utc": "2026-11-06T14:17Z",
+ "generado_utc": "2026-11-06T15:20Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 061400Z 08006KT 020V130 9999 FEW013 21/17 Q1020",
-  "hora_utc": "2026-11-06T14:00Z",
+  "texto": "METAR GEML 061500Z 08006KT 020V120 9999 FEW017 21/17 Q1020",
+  "hora_utc": "2026-11-06T15:00Z",
   "descifrado": [
-   "Viento: del 080° a 6 kt (cambiando entre 020° y 130°).",
+   "Viento: del 080° a 6 kt (cambiando entre 020° y 120°).",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.300 ft.",
+   "Nubes: pocas nubes a 1.700 ft.",
    "Temperatura 21 °C, punto de rocío 17 °C.",
    "Presión (QNH): 1020 hPa."
   ]
