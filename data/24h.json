@@ -1,87 +1,33 @@
 {
- "generado_utc": "2026-11-07T04:52Z",
+ "generado_utc": "2026-11-07T05:49Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 062300Z 0700/0724 16003KT CAVOK TX23/0714Z TN17/0707Z PROB30 TEMPO 0700/0709 3000 BR BECMG 0709/0711 09010KT",
-  "emision_utc": "2026-11-06T23:00Z",
-  "desde_utc": "2026-11-07T00:00Z",
-  "hasta_utc": "2026-11-08T00:00Z"
+  "texto": "TAF GEML 070500Z 0706/0806 VRB03KT 9999 SCT020 TX23/0714Z TN18/0707Z BECMG 0708/0710 09010KT",
+  "emision_utc": "2026-11-07T05:00Z",
+  "desde_utc": "2026-11-07T06:00Z",
+  "hasta_utc": "2026-11-08T06:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-07T04:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
-     "grupos": "3000 BR"
-    }
-   ]
-  },
-  {
-   "inicio_utc": "2026-11-07T05:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
-     "grupos": "3000 BR"
-    }
-   ]
-  },
   {
    "inicio_utc": "2026-11-07T06:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
-     "grupos": "3000 BR"
-    }
-   ]
+   "posibles": []
   },
   {
    "inicio_utc": "2026-11-07T07:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
-     "grupos": "3000 BR"
-    }
-   ]
+   "posibles": []
   },
   {
    "inicio_utc": "2026-11-07T08:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
-     "grupos": "3000 BR"
-    }
-   ]
+   "posibles": []
   },
   {
    "inicio_utc": "2026-11-07T09:00Z",
@@ -183,6 +129,48 @@
   },
   {
    "inicio_utc": "2026-11-07T23:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T00:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T01:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T02:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T03:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T04:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-08T05:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
