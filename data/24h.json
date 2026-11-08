@@ -1,9 +1,9 @@
 {
- "generado_utc": "2026-11-08T05:50Z",
+ "generado_utc": "2026-11-08T06:57Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 080500Z 0806/0906 09010KT CAVOK TX23/0814Z TN18/0807Z BECMG 0816/0818 VRB03KT",
-  "emision_utc": "2026-11-08T05:00Z",
+  "texto": "TAF AMD GEML 080638Z 0806/0906 VRB03KT CAVOK TX23/0814Z TN18/0807Z",
+  "emision_utc": "2026-11-08T06:38Z",
   "desde_utc": "2026-11-08T06:00Z",
   "hasta_utc": "2026-11-09T06:00Z"
  },
