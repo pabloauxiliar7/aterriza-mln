@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-08T09:48Z",
+ "generado_utc": "2026-11-08T10:44Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF AMD GEML 080638Z 0806/0906 VRB03KT CAVOK TX23/0814Z TN18/0807Z",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-09T06:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-08T09:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-08T10:00Z",
    "estado": "verde",
