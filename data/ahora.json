@@ -1,12 +1,13 @@
 {
- "generado_utc": "2026-11-08T14:41Z",
+ "generado_utc": "2026-11-08T15:38Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 081430Z 09004KT 050V160 CAVOK 21/17 Q1017",
-  "hora_utc": "2026-11-08T14:30Z",
+  "texto": "METAR GEML 081530Z 09003KT 060V160 9999 SCT015 21/17 Q1017",
+  "hora_utc": "2026-11-08T15:30Z",
   "descifrado": [
-   "Viento: del 090° a 4 kt (cambiando entre 050° y 160°).",
-   "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
+   "Viento: del 090° a 3 kt (cambiando entre 060° y 160°).",
+   "Visibilidad: 10 km o más.",
+   "Nubes: nubes dispersas a 1.500 ft.",
    "Temperatura 21 °C, punto de rocío 17 °C.",
    "Presión (QNH): 1017 hPa."
   ]
