@@ -1,9 +1,9 @@
 {
- "generado_utc": "2026-11-09T17:57Z",
+ "generado_utc": "2026-11-09T18:56Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 091700Z 0918/1018 VRB03KT 9999 FEW015 TX22/1014Z TN19/1006Z TEMPO 0920/1002 22010KT",
-  "emision_utc": "2026-11-09T17:00Z",
+  "texto": "TAF AMD GEML 091806Z 0918/1018 VRB03KT 9999 FEW015 TX22/1014Z TN19/1006Z PROB40 TEMPO 0918/0921 3000 TSRA SCT020CB TEMPO 0920/1002 22010KT",
+  "emision_utc": "2026-11-09T18:06Z",
   "desde_utc": "2026-11-09T18:00Z",
   "hasta_utc": "2026-11-10T18:00Z"
  },
@@ -13,14 +13,30 @@
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 40 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 TSRA SCT020CB"
+    }
+   ]
   },
   {
    "inicio_utc": "2026-11-09T19:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 40 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 TSRA SCT020CB"
+    }
+   ]
   },
   {
    "inicio_utc": "2026-11-09T20:00Z",
@@ -28,6 +44,13 @@
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
    "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 40 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 TSRA SCT020CB"
+    },
     {
      "tipo": "Temporal",
      "estado": "verde",
