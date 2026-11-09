@@ -1,15 +1,16 @@
 {
- "generado_utc": "2026-11-09T01:05Z",
+ "generado_utc": "2026-11-09T02:14Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 090100Z AUTO 00000KT CAVOK 19/18 Q1017",
-  "hora_utc": "2026-11-09T01:00Z",
+  "texto": "METAR GEML 090200Z AUTO 16004KT 130V190 9999 FEW021 20/19 Q1016",
+  "hora_utc": "2026-11-09T02:00Z",
   "descifrado": [
    "Parte automático (sin observador).",
-   "Viento: en calma.",
-   "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
-   "Temperatura 19 °C, punto de rocío 18 °C.",
-   "Presión (QNH): 1017 hPa."
+   "Viento: del 160° a 4 kt (cambiando entre 130° y 190°).",
+   "Visibilidad: 10 km o más.",
+   "Nubes: pocas nubes a 2.100 ft.",
+   "Temperatura 20 °C, punto de rocío 19 °C.",
+   "Presión (QNH): 1016 hPa."
   ]
  },
  "semaforo": {
@@ -25,25 +26,25 @@
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 0,
-   "cara": 0,
+   "cruzado": 1,
+   "cara": 4,
    "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 0,
+   "cruzado_max": 1,
    "cola_max": 0
   },
   {
    "pista": "33",
-   "cruzado": 0,
+   "cruzado": 1,
    "cara": 0,
-   "cola": 0,
+   "cola": 4,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 0,
-   "cola_max": 0
+   "cruzado_max": 1,
+   "cola_max": 4
   }
  ],
  "viento_evaluado": false,
