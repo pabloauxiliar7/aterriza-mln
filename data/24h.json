@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-09T15:31Z",
+ "generado_utc": "2026-11-09T16:40Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF AMD GEML 091236Z 0912/1012 30005KT 9999 SCT015 TX22/0914Z TN19/1006Z PROB40 TEMPO 0912/0914 3000 TSRA SCT020CB",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-10T12:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-09T15:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-09T16:00Z",
    "estado": "verde",
