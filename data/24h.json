@@ -1,72 +1,26 @@
 {
- "generado_utc": "2026-11-09T22:47Z",
+ "generado_utc": "2026-11-09T23:41Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF AMD GEML 091806Z 0918/1018 VRB03KT 9999 FEW015 TX22/1014Z TN19/1006Z PROB40 TEMPO 0918/0921 3000 TSRA SCT020CB TEMPO 0920/1002 22010KT",
-  "emision_utc": "2026-11-09T18:06Z",
-  "desde_utc": "2026-11-09T18:00Z",
-  "hasta_utc": "2026-11-10T18:00Z"
+  "texto": "TAF GEML 092300Z 1000/1024 25007KT 9999 FEW015 TX22/1014Z TN19/1006Z",
+  "emision_utc": "2026-11-09T23:00Z",
+  "desde_utc": "2026-11-10T00:00Z",
+  "hasta_utc": "2026-11-11T00:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-09T22:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "22010KT"
-    }
-   ]
-  },
-  {
-   "inicio_utc": "2026-11-09T23:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "22010KT"
-    }
-   ]
-  },
   {
    "inicio_utc": "2026-11-10T00:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "22010KT"
-    }
-   ]
+   "posibles": []
   },
   {
    "inicio_utc": "2026-11-10T01:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "22010KT"
-    }
-   ]
+   "posibles": []
   },
   {
    "inicio_utc": "2026-11-10T02:00Z",
@@ -175,6 +129,48 @@
   },
   {
    "inicio_utc": "2026-11-10T17:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T18:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T19:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T20:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T21:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T22:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-10T23:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
