@@ -1,20 +1,13 @@
 {
- "generado_utc": "2026-11-10T11:25Z",
+ "generado_utc": "2026-11-10T12:26Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 100500Z 1006/1106 04004KT 9999 FEW015 TX22/1014Z TN19/1006Z",
-  "emision_utc": "2026-11-10T05:00Z",
-  "desde_utc": "2026-11-10T06:00Z",
-  "hasta_utc": "2026-11-11T06:00Z"
+  "texto": "TAF GEML 101100Z 1012/1112 VRB03KT 9999 FEW025 TX22/1014Z TN19/1106Z",
+  "emision_utc": "2026-11-10T11:00Z",
+  "desde_utc": "2026-11-10T12:00Z",
+  "hasta_utc": "2026-11-11T12:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-10T11:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-10T12:00Z",
    "estado": "verde",
@@ -136,6 +129,48 @@
   },
   {
    "inicio_utc": "2026-11-11T05:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T06:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T07:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T08:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T09:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T10:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-11T11:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
