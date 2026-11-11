@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-11T19:59Z",
+ "generado_utc": "2026-11-11T21:37Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 111700Z 1118/1218 17007KT 9999 FEW015 TX25/1214Z TN17/1206Z BECMG 1120/1122 22017KT PROB40 1120/1201 22018G32KT PROB30 TEMPO 1119/1124 23025G38KT 4000 RA BECMG 1202/1204 28014KT PROB40 TEMPO 1202/1206 29018G30KT",
@@ -8,43 +8,6 @@
   "hasta_utc": "2026-11-12T18:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-11T19:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 4.000 m.",
-     "grupos": "23025G38KT 4000 RA"
-    }
-   ]
-  },
-  {
-   "inicio_utc": "2026-11-11T20:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Probabilidad 40 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "22018G32KT"
-    },
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 4.000 m.",
-     "grupos": "23025G38KT 4000 RA"
-    }
-   ]
-  },
   {
    "inicio_utc": "2026-11-11T21:00Z",
    "estado": "verde",
