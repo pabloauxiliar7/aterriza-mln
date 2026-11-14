@@ -1,12 +1,12 @@
 {
- "generado_utc": "2026-11-14T00:59Z",
+ "generado_utc": "2026-11-14T02:02Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 140030Z AUTO VRB02KT CAVOK 18/15 Q1018",
-  "hora_utc": "2026-11-14T00:30Z",
+  "texto": "METAR GEML 140130Z AUTO 25003KT 210V300 CAVOK 18/15 Q1018",
+  "hora_utc": "2026-11-14T01:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
-   "Viento: de dirección variable, 2 kt.",
+   "Viento: del 250° a 3 kt (cambiando entre 210° y 300°).",
    "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
    "Temperatura 18 °C, punto de rocío 15 °C.",
    "Presión (QNH): 1018 hPa."
@@ -25,25 +25,25 @@
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 2,
+   "cruzado": 3,
    "cara": 0,
-   "cola": 2,
+   "cola": 1,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 2,
-   "cola_max": 2
+   "cruzado_max": 3,
+   "cola_max": 1
   },
   {
    "pista": "33",
-   "cruzado": 2,
-   "cara": 0,
-   "cola": 2,
+   "cruzado": 3,
+   "cara": 1,
+   "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 2,
-   "cola_max": 2
+   "cruzado_max": 3,
+   "cola_max": 0
   }
  ],
  "viento_evaluado": false,
