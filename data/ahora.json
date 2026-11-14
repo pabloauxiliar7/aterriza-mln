@@ -1,9 +1,9 @@
 {
- "generado_utc": "2026-11-14T03:53Z",
+ "generado_utc": "2026-11-14T04:54Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 140330Z AUTO VRB02KT CAVOK 17/15 Q1018",
-  "hora_utc": "2026-11-14T03:30Z",
+  "texto": "METAR GEML 140430Z AUTO VRB02KT CAVOK 17/15 Q1018",
+  "hora_utc": "2026-11-14T04:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: de dirección variable, 2 kt.",
