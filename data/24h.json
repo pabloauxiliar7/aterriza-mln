@@ -1,20 +1,13 @@
 {
- "generado_utc": "2026-11-16T17:13Z",
+ "generado_utc": "2026-11-16T18:27Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 161100Z 1612/1712 07007KT 9999 FEW015 TX22/1614Z TN14/1706Z BECMG 1707/1709 29010KT",
-  "emision_utc": "2026-11-16T11:00Z",
-  "desde_utc": "2026-11-16T12:00Z",
-  "hasta_utc": "2026-11-17T12:00Z"
+  "texto": "TAF GEML 161700Z 1618/1718 VRB03KT 9999 FEW015 TX24/1714Z TN14/1706Z BECMG 1707/1709 29010KT",
+  "emision_utc": "2026-11-16T17:00Z",
+  "desde_utc": "2026-11-16T18:00Z",
+  "hasta_utc": "2026-11-17T18:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-16T17:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-16T18:00Z",
    "estado": "verde",
@@ -136,6 +129,48 @@
   },
   {
    "inicio_utc": "2026-11-17T11:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T12:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T13:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T14:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T15:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T16:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": []
+  },
+  {
+   "inicio_utc": "2026-11-17T17:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
