@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-16T12:12Z",
+ "generado_utc": "2026-11-16T15:38Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 161100Z 1612/1712 07007KT 9999 FEW015 TX22/1614Z TN14/1706Z BECMG 1707/1709 29010KT",
@@ -8,27 +8,6 @@
   "hasta_utc": "2026-11-17T12:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-16T12:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
-  {
-   "inicio_utc": "2026-11-16T13:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
-  {
-   "inicio_utc": "2026-11-16T14:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-16T15:00Z",
    "estado": "verde",
