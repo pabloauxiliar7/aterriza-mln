@@ -1,13 +1,13 @@
 {
- "generado_utc": "2026-11-17T15:57Z",
+ "generado_utc": "2026-11-17T17:04Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 171530Z 29013KT 250V330 CAVOK 21/11 Q1019",
-  "hora_utc": "2026-11-17T15:30Z",
+  "texto": "METAR GEML 171630Z 28011KT 230V320 CAVOK 21/09 Q1019",
+  "hora_utc": "2026-11-17T16:30Z",
   "descifrado": [
-   "Viento: del 290° a 13 kt (cambiando entre 250° y 330°).",
+   "Viento: del 280° a 11 kt (cambiando entre 230° y 320°).",
    "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
-   "Temperatura 21 °C, punto de rocío 11 °C.",
+   "Temperatura 21 °C, punto de rocío 9 °C.",
    "Presión (QNH): 1019 hPa."
   ]
  },
@@ -26,17 +26,17 @@
    "pista": "15",
    "cruzado": 8,
    "cara": 0,
-   "cola": 10,
+   "cola": 8,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
    "cruzado_max": 8,
-   "cola_max": 10
+   "cola_max": 8
   },
   {
    "pista": "33",
    "cruzado": 8,
-   "cara": 10,
+   "cara": 8,
    "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
