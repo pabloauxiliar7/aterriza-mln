@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-18T03:57Z",
+ "generado_utc": "2026-11-18T05:02Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 172300Z 1800/1824 VRB03KT CAVOK TX27/1814Z TN17/1806Z BECMG 1810/1812 28010KT",
@@ -8,20 +8,6 @@
   "hasta_utc": "2026-11-19T00:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-18T03:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
-  {
-   "inicio_utc": "2026-11-18T04:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-18T05:00Z",
    "estado": "verde",
