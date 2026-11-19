@@ -1,48 +1,48 @@
 {
- "generado_utc": "2026-11-19T10:12Z",
+ "generado_utc": "2026-11-19T11:28Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 191000Z 30012G24KT 250V340 9999 FEW016 BKN021 20/17 Q1019",
-  "hora_utc": "2026-11-19T10:00Z",
+  "texto": "METAR GEML 191100Z 28011G22KT 200V320 9999 BKN034 22/14 Q1019",
+  "hora_utc": "2026-11-19T11:00Z",
   "descifrado": [
-   "Viento: del 300° a 12 kt, con ráfagas de 24 kt (cambiando entre 250° y 340°).",
+   "Viento: del 280° a 11 kt, con ráfagas de 22 kt (cambiando entre 200° y 320°).",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.600 ft; nuboso a 2.100 ft.",
-   "Temperatura 20 °C, punto de rocío 17 °C.",
+   "Nubes: nuboso a 3.400 ft.",
+   "Temperatura 22 °C, punto de rocío 14 °C.",
    "Presión (QNH): 1019 hPa."
   ]
  },
  "semaforo": {
   "estado": "verde",
   "texto": "Por encima de los mínimos",
-  "motivo": "Techo 2.100 ft y visibilidad 10 km o más.",
+  "motivo": "Techo 3.400 ft y visibilidad 10 km o más.",
   "procedimiento": "VOR A (en circuito)",
   "causas": []
  },
- "techo_ft": 2100,
+ "techo_ft": 3400,
  "techo_conocido": true,
  "visibilidad_m": 10000,
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 5,
+   "cruzado": 8,
    "cara": 0,
-   "cola": 11,
-   "cruzado_racha": 11,
+   "cola": 8,
+   "cruzado_racha": 16,
    "cara_racha": 0,
-   "cola_racha": 21,
-   "cruzado_max": 11,
-   "cola_max": 21
+   "cola_racha": 15,
+   "cruzado_max": 16,
+   "cola_max": 15
   },
   {
    "pista": "33",
-   "cruzado": 5,
-   "cara": 11,
+   "cruzado": 8,
+   "cara": 8,
    "cola": 0,
-   "cruzado_racha": 11,
-   "cara_racha": 21,
+   "cruzado_racha": 16,
+   "cara_racha": 15,
    "cola_racha": 0,
-   "cruzado_max": 11,
+   "cruzado_max": 16,
    "cola_max": 0
   }
  ],
