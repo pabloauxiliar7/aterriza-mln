@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-19T03:58Z",
+ "generado_utc": "2026-11-19T05:07Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 182300Z 1900/1924 26008KT 9999 FEW010 TX24/1914Z TN18/1906Z TEMPO 1910/1919 28015G25KT",
@@ -8,20 +8,6 @@
   "hasta_utc": "2026-11-20T00:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-19T03:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
-  {
-   "inicio_utc": "2026-11-19T04:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-19T05:00Z",
    "estado": "verde",
