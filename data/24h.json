@@ -1,27 +1,13 @@
 {
- "generado_utc": "2026-11-20T22:49Z",
+ "generado_utc": "2026-11-20T23:49Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 201700Z 2018/2118 VRB03KT 9999 FEW025 TX22/2114Z TN15/2106Z",
-  "emision_utc": "2026-11-20T17:00Z",
-  "desde_utc": "2026-11-20T18:00Z",
-  "hasta_utc": "2026-11-21T18:00Z"
+  "texto": "TAF GEML 202300Z 2100/2124 VRB03KT 9999 FEW025 TX22/2114Z TN15/2106Z BECMG 2118/2120 26010KT PROB30 TEMPO 2117/2123 3000 BR",
+  "emision_utc": "2026-11-20T23:00Z",
+  "desde_utc": "2026-11-21T00:00Z",
+  "hasta_utc": "2026-11-22T00:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-20T22:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
-  {
-   "inicio_utc": "2026-11-20T23:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-21T00:00Z",
    "estado": "verde",
@@ -143,6 +129,96 @@
   },
   {
    "inicio_utc": "2026-11-21T17:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T18:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T19:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T20:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T21:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T22:00Z",
+   "estado": "verde",
+   "texto": "Por encima de los mínimos",
+   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+   "posibles": [
+    {
+     "tipo": "Temporal, probabilidad 30 %",
+     "estado": "verde",
+     "texto": "Por encima de los mínimos",
+     "motivo": "Sin techo de nubes y visibilidad 3.000 m.",
+     "grupos": "3000 BR"
+    }
+   ]
+  },
+  {
+   "inicio_utc": "2026-11-21T23:00Z",
    "estado": "verde",
    "texto": "Por encima de los mínimos",
    "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
