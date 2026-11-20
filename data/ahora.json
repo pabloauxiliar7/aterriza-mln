@@ -1,25 +1,25 @@
 {
- "generado_utc": "2026-11-20T05:40Z",
+ "generado_utc": "2026-11-20T07:18Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 200530Z 27004KT 230V330 9999 FEW012 16/12 Q1022",
-  "hora_utc": "2026-11-20T05:30Z",
+  "texto": "METAR GEML 200700Z 27003KT 210V320 9999 BKN030 16/12 Q1023",
+  "hora_utc": "2026-11-20T07:00Z",
   "descifrado": [
-   "Viento: del 270° a 4 kt (cambiando entre 230° y 330°).",
+   "Viento: del 270° a 3 kt (cambiando entre 210° y 320°).",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.200 ft.",
+   "Nubes: nuboso a 3.000 ft.",
    "Temperatura 16 °C, punto de rocío 12 °C.",
-   "Presión (QNH): 1022 hPa."
+   "Presión (QNH): 1023 hPa."
   ]
  },
  "semaforo": {
   "estado": "verde",
   "texto": "Por encima de los mínimos",
-  "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
+  "motivo": "Techo 3.000 ft y visibilidad 10 km o más.",
   "procedimiento": "VOR A (en circuito)",
   "causas": []
  },
- "techo_ft": null,
+ "techo_ft": 3000,
  "techo_conocido": true,
  "visibilidad_m": 10000,
  "viento_por_pista": [
