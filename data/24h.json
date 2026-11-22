@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-22T19:51Z",
+ "generado_utc": "2026-11-22T20:46Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 221700Z 2218/2318 28010KT CAVOK TX23/2314Z TN16/2306Z BECMG 2218/2220 VRB03KT BECMG 2307/2309 09010KT",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-23T18:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-22T19:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-22T20:00Z",
    "estado": "verde",
