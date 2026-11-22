@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-22T13:59Z",
+ "generado_utc": "2026-11-22T14:52Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 221100Z 2212/2312 28013KT 9999 FEW020 TX23/2214Z TN16/2306Z PROB40 TEMPO 2212/2215 30015G25KT BECMG 2218/2220 VRB03KT BECMG 2307/2309 09010KT",
@@ -8,21 +8,6 @@
   "hasta_utc": "2026-11-23T12:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-22T13:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 40 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-     "grupos": "30015G25KT"
-    }
-   ]
-  },
   {
    "inicio_utc": "2026-11-22T14:00Z",
    "estado": "verde",
