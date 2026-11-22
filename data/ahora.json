@@ -1,51 +1,48 @@
 {
- "generado_utc": "2026-11-21T23:41Z",
+ "generado_utc": "2026-11-22T01:05Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 212330Z AUTO 28010KT 230V330 9999 BKN008 17/15 Q1022",
-  "hora_utc": "2026-11-21T23:30Z",
+  "texto": "METAR GEML 220030Z AUTO 28014KT CAVOK 19/14 Q1021",
+  "hora_utc": "2026-11-22T00:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
-   "Viento: del 280° a 10 kt (cambiando entre 230° y 330°).",
-   "Visibilidad: 10 km o más.",
-   "Nubes: nuboso a 800 ft.",
-   "Temperatura 17 °C, punto de rocío 15 °C.",
-   "Presión (QNH): 1022 hPa."
+   "Viento: del 280° a 14 kt.",
+   "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
+   "Temperatura 19 °C, punto de rocío 14 °C.",
+   "Presión (QNH): 1021 hPa."
   ]
  },
  "semaforo": {
-  "estado": "rojo",
-  "texto": "Por debajo de los mínimos",
-  "motivo": "Techo 800 ft, por debajo de 1.000 ft.",
+  "estado": "verde",
+  "texto": "Por encima de los mínimos",
+  "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
   "procedimiento": "VOR A (en circuito)",
-  "causas": [
-   "techo"
-  ]
+  "causas": []
  },
- "techo_ft": 800,
+ "techo_ft": null,
  "techo_conocido": true,
  "visibilidad_m": 10000,
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 7,
+   "cruzado": 10,
    "cara": 0,
-   "cola": 7,
+   "cola": 10,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 7,
-   "cola_max": 7
+   "cruzado_max": 10,
+   "cola_max": 10
   },
   {
    "pista": "33",
-   "cruzado": 7,
-   "cara": 7,
+   "cruzado": 10,
+   "cara": 10,
    "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 7,
+   "cruzado_max": 10,
    "cola_max": 0
   }
  ],
@@ -54,12 +51,12 @@
  "procedimientos": [
   {
    "nombre": "VOR A (en circuito)",
-   "ok": false,
+   "ok": true,
    "marginal": false
   },
   {
    "nombre": "NDB B (en circuito)",
-   "ok": false,
+   "ok": true,
    "marginal": false
   }
  ],
