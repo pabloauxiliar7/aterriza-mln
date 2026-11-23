@@ -1,28 +1,13 @@
 {
- "generado_utc": "2026-11-23T17:31Z",
+ "generado_utc": "2026-11-23T19:39Z",
  "oaci": "GEML",
  "taf": {
-  "texto": "TAF GEML 231700Z 2318/2418 09010KT 9999 SCT020 TX23/2414Z TN15/2406Z BECMG 2320/2322 VRB03KT PROB30 TEMPO 2318/2320 BKN014 BECMG 2413/2415 29011KT",
-  "emision_utc": "2026-11-23T17:00Z",
-  "desde_utc": "2026-11-23T18:00Z",
+  "texto": "TAF AMD GEML 231908Z 2319/2418 09010KT 9999 SCT020 TX23/2414Z TN15/2406Z BECMG 2319/2321 VRB03KT PROB30 TEMPO 2319/2320 BKN014 BECMG 2413/2415 29011KT",
+  "emision_utc": "2026-11-23T19:08Z",
+  "desde_utc": "2026-11-23T19:00Z",
   "hasta_utc": "2026-11-24T18:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-23T18:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": [
-    {
-     "tipo": "Temporal, probabilidad 30 %",
-     "estado": "verde",
-     "texto": "Por encima de los mínimos",
-     "motivo": "Techo 1.400 ft y visibilidad 10 km o más.",
-     "grupos": "BKN014"
-    }
-   ]
-  },
   {
    "inicio_utc": "2026-11-23T19:00Z",
    "estado": "verde",
