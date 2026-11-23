@@ -1,16 +1,15 @@
 {
- "generado_utc": "2026-11-23T05:20Z",
+ "generado_utc": "2026-11-23T06:44Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 230500Z AUTO VRB01KT 9999 FEW019 15/12 Q1023",
-  "hora_utc": "2026-11-23T05:00Z",
+  "texto": "METAR GEML 230630Z COR VRB01KT 9999 FEW024 16/13 Q1024",
+  "hora_utc": "2026-11-23T06:30Z",
   "descifrado": [
-   "Parte automático (sin observador).",
    "Viento: de dirección variable, 1 kt.",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.900 ft.",
-   "Temperatura 15 °C, punto de rocío 12 °C.",
-   "Presión (QNH): 1023 hPa."
+   "Nubes: pocas nubes a 2.400 ft.",
+   "Temperatura 16 °C, punto de rocío 13 °C.",
+   "Presión (QNH): 1024 hPa."
   ]
  },
  "semaforo": {
