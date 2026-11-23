@@ -1,15 +1,16 @@
 {
- "generado_utc": "2026-11-23T03:37Z",
+ "generado_utc": "2026-11-23T05:20Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 230330Z AUTO VRB01KT CAVOK 13/10 Q1024",
-  "hora_utc": "2026-11-23T03:30Z",
+  "texto": "METAR GEML 230500Z AUTO VRB01KT 9999 FEW019 15/12 Q1023",
+  "hora_utc": "2026-11-23T05:00Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: de dirección variable, 1 kt.",
-   "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
-   "Temperatura 13 °C, punto de rocío 10 °C.",
-   "Presión (QNH): 1024 hPa."
+   "Visibilidad: 10 km o más.",
+   "Nubes: pocas nubes a 1.900 ft.",
+   "Temperatura 15 °C, punto de rocío 12 °C.",
+   "Presión (QNH): 1023 hPa."
   ]
  },
  "semaforo": {
