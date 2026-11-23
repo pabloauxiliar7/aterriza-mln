@@ -1,16 +1,16 @@
 {
- "generado_utc": "2026-11-23T22:55Z",
+ "generado_utc": "2026-11-23T23:53Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 232230Z AUTO 00000KT 9999 SCT017 16/14 Q1023",
-  "hora_utc": "2026-11-23T22:30Z",
+  "texto": "METAR GEML 232330Z AUTO 00000KT 9999 SCT017 16/15 Q1022",
+  "hora_utc": "2026-11-23T23:30Z",
   "descifrado": [
    "Parte automático (sin observador).",
    "Viento: en calma.",
    "Visibilidad: 10 km o más.",
    "Nubes: nubes dispersas a 1.700 ft.",
-   "Temperatura 16 °C, punto de rocío 14 °C.",
-   "Presión (QNH): 1023 hPa."
+   "Temperatura 16 °C, punto de rocío 15 °C.",
+   "Presión (QNH): 1022 hPa."
   ]
  },
  "semaforo": {
