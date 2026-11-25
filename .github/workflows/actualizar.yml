@@ -38,7 +38,7 @@ jobs:
     timeout-minutes: 15
     environment:
       name: github-pages
-      url: ${{ steps.despliegue.outputs.page_url }}
+      url: ${{ steps.despliegue.outputs.page_url || steps.despliegue2.outputs.page_url }}
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v7
@@ -94,7 +94,20 @@ jobs:
         with:
           path: _site
 
+      # A veces GitHub tarda en «ver» la web recién subida y la publicación
+      # falla con «No artifacts named github-pages». Si pasa, se espera
+      # 30 segundos y se reintenta una vez antes de dar el error.
       - name: Publicar en GitHub Pages
         if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule'
         id: despliegue
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Esperar antes de reintentar
+        if: steps.despliegue.outcome == 'failure'
+        run: sleep 30
+
+      - name: Publicar en GitHub Pages (segundo intento)
+        if: steps.despliegue.outcome == 'failure'
+        id: despliegue2
         uses: actions/deploy-pages@v5
