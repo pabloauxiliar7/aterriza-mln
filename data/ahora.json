@@ -1,48 +1,51 @@
 {
- "generado_utc": "2026-11-25T06:30Z",
+ "generado_utc": "2026-11-25T06:42Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "SPECI GEML 250618Z 29007KT 240V330 9999 BKN011 BKN020 18/15 Q1020",
-  "hora_utc": "2026-11-25T06:18Z",
+  "texto": "SPECI GEML 250640Z 29008KT 240V340 4000 RA BKN009 BKN016 18/17 Q1020",
+  "hora_utc": "2026-11-25T06:40Z",
   "descifrado": [
-   "Viento: del 290° a 7 kt (cambiando entre 240° y 330°).",
-   "Visibilidad: 10 km o más.",
-   "Nubes: nuboso a 1.100 ft; nuboso a 2.000 ft.",
-   "Temperatura 18 °C, punto de rocío 15 °C.",
+   "Viento: del 290° a 8 kt (cambiando entre 240° y 340°).",
+   "Visibilidad: 4.000 m.",
+   "Tiempo: lluvia.",
+   "Nubes: nuboso a 900 ft; nuboso a 1.600 ft.",
+   "Temperatura 18 °C, punto de rocío 17 °C.",
    "Presión (QNH): 1020 hPa."
   ]
  },
  "semaforo": {
-  "estado": "ambar",
-  "texto": "Condiciones marginales",
-  "motivo": "Techo 1.100 ft, cerca del mínimo de 1.000 ft.",
+  "estado": "rojo",
+  "texto": "Por debajo de los mínimos",
+  "motivo": "Techo 900 ft, por debajo de 1.000 ft.",
   "procedimiento": "VOR A (en circuito)",
-  "causas": []
+  "causas": [
+   "techo"
+  ]
  },
- "techo_ft": 1100,
+ "techo_ft": 900,
  "techo_conocido": true,
- "visibilidad_m": 10000,
+ "visibilidad_m": 4000,
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 4,
+   "cruzado": 5,
    "cara": 0,
    "cola": 6,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 4,
+   "cruzado_max": 5,
    "cola_max": 6
   },
   {
    "pista": "33",
-   "cruzado": 4,
+   "cruzado": 5,
    "cara": 6,
    "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 4,
+   "cruzado_max": 5,
    "cola_max": 0
   }
  ],
@@ -51,13 +54,13 @@
  "procedimientos": [
   {
    "nombre": "VOR A (en circuito)",
-   "ok": true,
-   "marginal": true
+   "ok": false,
+   "marginal": false
   },
   {
    "nombre": "NDB B (en circuito)",
-   "ok": true,
-   "marginal": true
+   "ok": false,
+   "marginal": false
   }
  ],
  "reglas": {
