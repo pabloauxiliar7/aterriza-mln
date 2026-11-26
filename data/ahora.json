@@ -1,13 +1,14 @@
 {
- "generado_utc": "2026-11-26T21:27Z",
+ "generado_utc": "2026-11-26T22:31Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 262100Z 30007KT 260V340 9999 FEW035 16/09 Q1018",
-  "hora_utc": "2026-11-26T21:00Z",
+  "texto": "METAR GEML 262200Z AUTO 31008KT 250V350 9999 FEW033 SCT055 16/09 Q1018",
+  "hora_utc": "2026-11-26T22:00Z",
   "descifrado": [
-   "Viento: del 300° a 7 kt (cambiando entre 260° y 340°).",
+   "Parte automático (sin observador).",
+   "Viento: del 310° a 8 kt (cambiando entre 250° y 350°).",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 3.500 ft.",
+   "Nubes: pocas nubes a 3.300 ft; nubes dispersas a 5.500 ft.",
    "Temperatura 16 °C, punto de rocío 9 °C.",
    "Presión (QNH): 1018 hPa."
   ]
@@ -25,24 +26,24 @@
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 3,
+   "cruzado": 2,
    "cara": 0,
-   "cola": 6,
+   "cola": 8,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 3,
-   "cola_max": 6
+   "cruzado_max": 2,
+   "cola_max": 8
   },
   {
    "pista": "33",
-   "cruzado": 3,
-   "cara": 6,
+   "cruzado": 2,
+   "cara": 8,
    "cola": 0,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 3,
+   "cruzado_max": 2,
    "cola_max": 0
   }
  ],
