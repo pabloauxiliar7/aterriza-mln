@@ -1,14 +1,13 @@
 {
- "generado_utc": "2026-11-28T05:03Z",
+ "generado_utc": "2026-11-28T06:01Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 280430Z AUTO 00000KT CAVOK 11/10 Q1021",
-  "hora_utc": "2026-11-28T04:30Z",
+  "texto": "METAR GEML 280530Z 00000KT CAVOK 12/10 Q1021",
+  "hora_utc": "2026-11-28T05:30Z",
   "descifrado": [
-   "Parte automático (sin observador).",
    "Viento: en calma.",
    "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5.000 ft y sin fenómenos significativos.",
-   "Temperatura 11 °C, punto de rocío 10 °C.",
+   "Temperatura 12 °C, punto de rocío 10 °C.",
    "Presión (QNH): 1021 hPa."
   ]
  },
