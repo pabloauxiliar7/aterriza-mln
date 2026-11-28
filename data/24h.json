@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-28T06:01Z",
+ "generado_utc": "2026-11-28T07:15Z",
  "oaci": "GEML",
  "taf": {
   "texto": "TAF GEML 280500Z 2806/2906 VRB03KT CAVOK TX20/2814Z TN11/2806Z PROB40 TEMPO 2813/2817 09010KT",
@@ -8,13 +8,6 @@
   "hasta_utc": "2026-11-29T06:00Z"
  },
  "horas": [
-  {
-   "inicio_utc": "2026-11-28T06:00Z",
-   "estado": "verde",
-   "texto": "Por encima de los mínimos",
-   "motivo": "Sin techo de nubes y visibilidad 10 km o más.",
-   "posibles": []
-  },
   {
    "inicio_utc": "2026-11-28T07:00Z",
    "estado": "verde",
