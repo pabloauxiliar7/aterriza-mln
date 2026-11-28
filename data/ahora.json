@@ -1,14 +1,14 @@
 {
- "generado_utc": "2026-11-28T10:28Z",
+ "generado_utc": "2026-11-28T11:25Z",
  "oaci": "GEML",
  "metar": {
-  "texto": "METAR GEML 281000Z 00000KT 9999 FEW012 18/12 Q1022",
-  "hora_utc": "2026-11-28T10:00Z",
+  "texto": "METAR GEML 281100Z VRB02KT 9999 FEW010 18/10 Q1022",
+  "hora_utc": "2026-11-28T11:00Z",
   "descifrado": [
-   "Viento: en calma.",
+   "Viento: de dirección variable, 2 kt.",
    "Visibilidad: 10 km o más.",
-   "Nubes: pocas nubes a 1.200 ft.",
-   "Temperatura 18 °C, punto de rocío 12 °C.",
+   "Nubes: pocas nubes a 1.000 ft.",
+   "Temperatura 18 °C, punto de rocío 10 °C.",
    "Presión (QNH): 1022 hPa."
   ]
  },
@@ -25,25 +25,25 @@
  "viento_por_pista": [
   {
    "pista": "15",
-   "cruzado": 0,
+   "cruzado": 2,
    "cara": 0,
-   "cola": 0,
+   "cola": 2,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 0,
-   "cola_max": 0
+   "cruzado_max": 2,
+   "cola_max": 2
   },
   {
    "pista": "33",
-   "cruzado": 0,
+   "cruzado": 2,
    "cara": 0,
-   "cola": 0,
+   "cola": 2,
    "cruzado_racha": null,
    "cara_racha": null,
    "cola_racha": null,
-   "cruzado_max": 0,
-   "cola_max": 0
+   "cruzado_max": 2,
+   "cola_max": 2
   }
  ],
  "viento_evaluado": false,
